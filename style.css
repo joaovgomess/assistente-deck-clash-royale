@@ -1,0 +1,33 @@
+@charset "UtF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 160%;
+
+    background: #111214 url(/assets/bg-claro.jpg) no-repeat top center;
+    background-size: 100% auto;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    /* padding-top: 32px; */
+    text-align: center;
+}
+
+header img {
+    width: 400px;
+}
