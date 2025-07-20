@@ -1,0 +1,23 @@
+{
+  "name": "assistente-deck-clash-royale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovgomess/assistente-deck-clash-royale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovgomess/assistente-deck-clash-royale/issues"
+  },
+  "homepage": "https://github.com/joaovgomess/assistente-deck-clash-royale#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
