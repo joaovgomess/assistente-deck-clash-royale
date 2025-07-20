@@ -50,7 +50,7 @@ section > div {
     padding: 24px 32px 32px 32px;
 
     border-radius: 20px;
-    background-color: #1c2f3f;
+    background-color: #0b2841;
 }
 
 section h2 {
@@ -84,6 +84,8 @@ input, select {
     border: 2.5px solid #4579CF;
     border-radius: 12px;
     background-color: #00051a66;
+
+    box-shadow: 5px 7px 20px#111214;
 
     padding: 10px;
 
@@ -148,7 +150,9 @@ button:disabled {
     border: 2.5px solid #4579CF;
     border-radius: 12px;
 
-    padding: 20px;
+    box-shadow: 7px 10px 20px#111214;
+
+    padding: 0 20px 20px 20px;
     margin-top: 30px;
 }
 

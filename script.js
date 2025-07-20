@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyDLPg5rKY48XsPa0aUOlHqXC0ARdjc3VMg';
+const apiKey = '';
 const selectArena = document.querySelector('.select-arena');
 const inputPergunta = document.querySelector('.input-pergunta');
 const botaoPergunta = document.querySelector('.botao-pergunta');
