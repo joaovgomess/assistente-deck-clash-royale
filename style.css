@@ -24,10 +24,93 @@ body {
 
 
 header {
-    /* padding-top: 32px; */
     text-align: center;
 }
 
 header img {
     width: 400px;
+}
+
+
+
+
+main {
+    max-width: 576px;
+    width: 90%;
+}
+
+section {
+    background-image: linear-gradient(90deg, #CF741B, #FFF3BB, #FFCF48);
+    border-radius: 18px;
+    padding: 6px 4px;
+}
+
+section > div {
+    padding: 24px 32px 32px 32px;
+
+    border-radius: 20px;
+    background-color: #1c2f3f;
+}
+
+section h2 {
+    letter-spacing: 2px;
+}
+
+section  p{
+    color: #a1a1aa;
+}
+
+
+
+form {
+    margin-top: 20px;
+    gap: 14px;
+
+    display: flex;
+    flex-wrap: wrap; 
+
+
+}
+
+input, select {
+    all: unset;
+
+    border: 2.5px solid #4579CF;
+    border-radius: 8px;
+    background-color: #00051a66;
+
+    padding: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    flex: 1;
+}
+
+select {
+    text-align-last: center;
+}
+
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+
+    font-weight: bolder;
+    color:#111214;
+
+    border: 0;
+    border-radius: 8px;
+    background-image:  linear-gradient(90deg, #CF741B, #FFF3BB, #FFCF48);
+
+    box-shadow: 0 5px #5A2500;
+}
+
+button:hover {
+    cursor: pointer;
+    transform:translateY(-1.5px);
 }
