@@ -152,6 +152,19 @@ button:disabled {
     margin-top: 30px;
 }
 
+.resposta-conteudo p {
+    color: #fff;
+}
+
+.resposta-conteudo ul {
+    opacity: 0.775;
+}
+
+.resposta-conteudo li {
+    margin-left: 24px;
+    opacity: 0.775;
+}
+
 .hidden {
     display: none;
 }
