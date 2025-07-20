@@ -54,9 +54,12 @@ section > div {
 
 section h2 {
     letter-spacing: 2px;
+    text-shadow: 1px 2.5px #714C31;
+    font-size: 35px;
 }
 
 section  p{
+    padding-top: 15px;
     color: #a1a1aa;
 }
 
