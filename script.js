@@ -7,6 +7,12 @@ const form = document.querySelector('.form');
 
 
 
+const markdownToHTML = (text) => {
+    const converter = new showdown.Converter()
+    return converter.makeHtml(text)
+} 
+
+
 const perguntaIA = async (pergunta, arena, apiKey) => {
     const modelo = 'gemini-2.5-flash';
     const urlBase = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${apiKey}`;
@@ -29,7 +35,8 @@ Você deve responder as perguntas do usuário com base no seu conhecimento aprof
 - Considere sempre a data atual ${new Date().toLocaleDateString()} para garantir que as informações de meta estejam atualizadas.
 - Faça pesquisas atualizadas sobre o patch e balanceamento atual do Clash Royale, baseado na data atual, para dar uma resposta atualizada e coerente.
 - Nunca responda itens que você não tenha certeza de que existe ou é relevante no patch atual.
-- A resposta deve ser focada na Arena que o usuário especificar, se aplicável.
+- A resposta deve ser focada na Arena que o usuário especificar.
+- Sempre tenha certeza de que as cartas que você sugerir para o deck já tenham sido desbloqueadas pelo usuário em relação a arena que ele se encontra.
 
 ## RESPOSTA
 - Economize na resposta, seja direto e utilize no máximo 750 caracteres.
@@ -124,7 +131,7 @@ const mandarForm = async (event) => {
 
     try {
         const text = await perguntaIA (pergunta, arena, apiKey);
-        respostaIA.querySelector('.resposta-conteudo').innerHTML = text;
+        respostaIA.querySelector('.resposta-conteudo').innerHTML = markdownToHTML(text);
         respostaIA.classList.remove('hidden');
     } catch(error) {
         console.error('Erro: ', error);
