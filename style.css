@@ -81,7 +81,7 @@ input, select {
     all: unset;
 
     border: 2.5px solid #4579CF;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #00051a66;
 
     padding: 10px;
@@ -109,7 +109,7 @@ button {
     color:#111214;
 
     border: 0;
-    border-radius: 8px;
+    border-radius: 12px;
     background-image:  linear-gradient(90deg, #CF741B, #FFF3BB, #FFCF48);
 
     box-shadow: 0 5px #5A2500;
@@ -141,6 +141,15 @@ button:disabled {
 }
 
 
+
+.resposta-conteudo {
+    background-color: #00051a66;
+    border: 2.5px solid #4579CF;
+    border-radius: 12px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
 
 .hidden {
     display: none;
