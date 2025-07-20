@@ -112,10 +112,14 @@ const mandarForm = async (event) => {
 
     console.log({apiKey, arena, pergunta})
 
-    if(apiKey == '' || arena == '' || pergunta == '') {
+    if(apiKey == '' || arena == 'padrao' || pergunta == '') {
         alert('Por favor, preencha todos os campos.')
         return;
     }
+
+    botaoPergunta.disabled = true;
+    botaoPergunta.textContent = 'Perguntando...';
+    botaoPergunta.classList.add('carregando');
 
 
     try {
@@ -123,7 +127,11 @@ const mandarForm = async (event) => {
         respostaIA.querySelector('.resposta-conteudo').innerHTML = text;
         respostaIA.classList.remove('hidden');
     } catch(error) {
-        console.log('Erro: ', error);
+        console.error('Erro: ', error);
+    } finally {
+        botaoPergunta.disabled = false;
+        botaoPergunta.textContent = 'Perguntar';
+        botaoPergunta.classList.remove('carregando');
     }
 
 }

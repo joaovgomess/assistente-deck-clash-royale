@@ -113,11 +113,31 @@ button {
     background-image:  linear-gradient(90deg, #CF741B, #FFF3BB, #FFCF48);
 
     box-shadow: 0 5px #5A2500;
+
+    transition: background-image 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
 }
 
 button:hover {
     cursor: pointer;
     transform:translateY(-1.5px);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    transform: translateY(0);
+
+    box-shadow: 0px 5px 25px rgba(255, 248, 107, 0.6);
+    background-image: linear-gradient(90deg, #D114D5, #FC9DF1, #FEF9E6, #D5FFCB, #8FFFC2);
+}
+
+.carregando {
+    animation: pulsar 1.75s infinite;
+}
+
+@keyframes pulsar {
+    50% {
+        opacity: 0.5;
+    }
 }
 
 
