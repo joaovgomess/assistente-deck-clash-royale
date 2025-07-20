@@ -15,6 +15,7 @@ body {
     background-size: 100% auto;
 
     min-height: 100vh;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
@@ -105,7 +106,7 @@ button {
     padding: 10px;
     margin-top: 7px;
 
-    font-weight: bolder;
+    font-weight: 800;
     color:#111214;
 
     border: 0;
