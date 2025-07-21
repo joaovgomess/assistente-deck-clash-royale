@@ -49,13 +49,13 @@ Para rodar este projeto localmente ou entender sua estrutura:
 
 2.  ### Clone o repositório
     ```bash
-    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+    git clone https://github.com/joaovgomess/assistente-deck-clash-royale
     ```
-    (Lembre-se de substituir `SEU_USUARIO` e `SEU_REPOSITORIO` pelo seu próprio usuário e nome do repositório)
+
 
 3.  ### Navegue até o Diretório do Projeto
     ```bash
-    cd SEU_REPOSITORIO
+    cd assistente-deck-clash-royale
     ```
 
 4.  ### Instale as Dependências do Backend (Função Serverless)
