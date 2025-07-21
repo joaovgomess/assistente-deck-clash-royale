@@ -30,7 +30,7 @@ const perguntaIA = async (pergunta, arena) => {
     const data = await response.json();
     console.log({data});
 
-    if (!response.ok) { // Verifica se a resposta HTTP foi um erro (ex: 400, 500)
+    if (!response.ok) { // verificando se a resposta http foi um erro (ex: 400, 500)
         console.error("Erro do servidor:", data.error || data.message || "Erro desconhecido");
         throw new Error(data.error || "Não foi possível obter a resposta da IA. Tente novamente mais tarde.");
     }
