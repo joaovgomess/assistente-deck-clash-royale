@@ -97,7 +97,7 @@ const perguntaIA = async (pergunta, arena) => {
         },
         body: JSON.stringify({
             pergunta,
-            tools
+            arena
         })
     })
 
